@@ -3,6 +3,7 @@ import Form from "./components/Form";
 import FilterButton from "./components/FilterButton";
 import Todo from "./components/Todo";
 import { v4 as uuid } from 'uuid';
+
 //import Search from "./components/Search";
 //import { format } from 'date-fns';
 //const uniqueId = () => "todo-"+parseInt(Date.now() * Math.random()).toString();
@@ -93,8 +94,10 @@ function App(props) {
     ));
 
   return (
+    
+     
+    
     <div className="todoapp stack-large">
-      <h1>To Do List</h1>
       <Form addTask={addTask} />
       <div className="filters btn-group stack-exception">
         {filterList}
@@ -106,6 +109,7 @@ function App(props) {
         {taskList}
       </ul>
     </div>
+    
   );
 
 }
