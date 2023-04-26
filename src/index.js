@@ -16,6 +16,18 @@ const DATA = [
   { id: uuidv4(), name: "Sleep",date: new Date(), completed: false },
   { id: uuidv4(), name: "Repeat", date: new Date(), completed: false }
 ];
+
+/*
+For postman, this is the syntax.  Info on a single moveie:
+  https://www.omdbapi.com/?i=tt3748528&apikey=256f47df
+  - where tt3748528 is the imdbID
+
+To return movies based on a search term:
+  
+
+*/
+
+
 const sortedData = DATA.sort((a, b) => b.dateAdded - a.dateAdded);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
