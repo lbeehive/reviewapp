@@ -12,10 +12,11 @@ function Home() {
   <p>{MOVIEDATA.Movies[0].Title} - Released: {MOVIEDATA.Movies[0].Released}</p>
         <img src={MOVIEDATA.Movies[0].Poster} alt='movie'></img>
         <label>comment</label>
-        <input
+        <textarea
           id="homeComment"
           type="textarea"
-          
+          rows={6}
+          cols={20}
         />
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/frdj1zb9sMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
   </main>
