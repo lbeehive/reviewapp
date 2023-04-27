@@ -1,4 +1,7 @@
 // src/routes/Movies.js
+import { Link } from 'react-router-dom';
+//import movies from '../Movies';
+
 let MOVIEDATA = require('../components/MovieData.json');
 const movies = MOVIEDATA.Movies;
 function Movies() {
@@ -7,8 +10,22 @@ function Movies() {
 <h1>Featured Movie(s):</h1>
  <ul id="movies-list">
  {movies.map((movie) => (
- <li key={movie.id}> 
- {movie.Title} <img src={movie.Poster} alt='movie'></img>
+ <li key={movie.imdbID}> 
+ <Link to={movie.imdbID}>
+    {movie.Title} 
+ </Link>
+ <p>{movie.Released}</p>
+ <p>{movie.Runtime}</p>
+ <p>{movie.Genre}</p>
+ <p>{movie.Plot}</p>
+ <img src={movie.Poster} alt='movie'/>
+ <iframe width="560" height="315" src={movie.Trailer} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ <label>comment</label>
+        <input
+          id="homeComment"
+          type="textarea"
+          
+        />
  </li>
  ))}
  </ul>

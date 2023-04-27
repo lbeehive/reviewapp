@@ -1,7 +1,7 @@
 import React from 'react';
-//import {NavLink} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 //import Signout from './Signout';
-
+/*
 const Link = {
     width: "100px",
     padding: "6px 12px",
@@ -10,7 +10,7 @@ const Link = {
     textDecoration: "none",
     color: "black",
 }
-/*
+
 
             <NavLink to="/" exact style={Link} activeStyle={{background: "blue"}}>Home</NavLink>
             <NavLink to="/products" exact style={Link} activeStyle={{background: "blue"}}>Movies</NavLink>
@@ -23,9 +23,30 @@ const Link = {
 */
 const Navbar = () => {
     return (
-        <div className="Navbar">
-        </div>
-    )
+        <header id="main-nav">
+        <nav>
+          <ul>
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? 'active' : '')}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/movies"
+                className={({ isActive }) => (isActive ? 'active' : '')}
+              >
+                Movies
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    );
+    
 }
 
 export default Navbar;
