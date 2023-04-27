@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+//import {NavLink} from 'react-router-dom';
 //import Signout from './Signout';
 
 const Link = {
@@ -15,15 +15,15 @@ const Link = {
             <NavLink to="/" exact style={Link} activeStyle={{background: "blue"}}>Home</NavLink>
             <NavLink to="/products" exact style={Link} activeStyle={{background: "blue"}}>Movies</NavLink>
             <NavLink to="/signin" exact style={Link} activeStyle={{background: "blue"}}>Sign In</NavLink>
+            <NavLink to="/" exact style={Link} activeStyle={{background: "blue"}}>Home</NavLink>
+            <NavLink to="/movies" exact style={Link} activeStyle={{background: "blue"}}>Movies</NavLink>
+            <NavLink to="/signup" exact style={Link} activeStyle={{background: "blue"}}>Sign Up</NavLink>
+            <NavLink to="/login" exact style={Link} activeStyle={{background: "blue"}}>Login</NavLink>
 
 */
 const Navbar = () => {
     return (
         <div className="Navbar">
-            <NavLink to="/" exact style={Link} activeStyle={{background: "blue"}}>Home</NavLink>
-            <NavLink to="/products" exact style={Link} activeStyle={{background: "blue"}}>Movies</NavLink>
-            <NavLink to="/signin" exact style={Link} activeStyle={{background: "blue"}}>Sign In</NavLink>
-            
         </div>
     )
 }

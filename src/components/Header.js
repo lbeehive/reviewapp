@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from './Navbar';
-import {NavLink} from 'react-router-dom';
 //import Signout from './Signout';
 
 /*
@@ -18,7 +17,6 @@ const Header = () => {
         <div>
             <div className="Header">
 
-                <h1 id="siteTitle"><NavLink to={'/'}><span>Review App</span></NavLink></h1>
                 <Navbar />
                 
             </div>
