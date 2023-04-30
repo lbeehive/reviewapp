@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import React, { useState } from "react";
+//import React, { useState } from "react";
 
 // src/routes/Home.js
 function Home(props) {
-  const [movies, setMovies] = useState(props.movies);
+  //const [movies, setMovies] = useState(props.movies);
 
-  const movieList = movies;
+  const movieList = props.movies;
 
   return (
   <main>
@@ -15,13 +15,6 @@ function Home(props) {
   <h2>Featured Movies</h2></Link>
   <p>{movieList[0].Title} - Released: {movieList[0].Released}</p>
         <img src={movieList[0].Poster} alt='movie'></img>
-        <label>comment</label>
-        <textarea
-          id="homeComment"
-          type="textarea"
-          rows={6}
-          cols={20}
-        />
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/frdj1zb9sMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
   </main>
   );

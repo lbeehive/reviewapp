@@ -30,6 +30,20 @@
             "Value": "65/100"
         }
     ],
+    "UserReviews": [
+        {
+            "Review": "Awesome",
+            "Stars": "5"
+        },
+        {
+            "Review": "Nice",
+            "Stars": "4"
+        },
+        {
+            "Review": "OK",
+            "Stars": "3"
+        }
+    ],
     "Metascore": "65",
     "imdbRating": "7.8",
     "imdbVotes": "651,965",
@@ -70,6 +84,12 @@
         {
             "Source": "Metacritic",
             "Value": "90/100"
+        }
+    ],
+    "UserReviews": [
+        {
+            "Review": "So so",
+            "Stars": "3"
         }
     ],
     "Metascore": "90",
@@ -113,6 +133,12 @@
           "Value": "82/100"
       }
   ],
+  "UserReviews": [
+    {
+        "Review": "Good",
+        "Stars": "4"
+    }
+  ],
   "Metascore": "82",
   "imdbRating": "8.7",
   "imdbVotes": "1,310,371",
@@ -154,6 +180,12 @@
           "Value": "58/100"
       }
   ],
+  "UserReviews": [
+    {
+        "Review": "meh",
+        "Stars": "2"
+    }
+  ],
   "Metascore": "58",
   "imdbRating": "8.3",
   "imdbVotes": "1,068,766",
@@ -190,6 +222,12 @@
           "Source": "Metacritic",
           "Value": "80/100"
       }
+  ],
+  "UserReviews": [
+    {
+        "Review": "awake",
+        "Stars": "1"
+    }
   ],
   "Metascore": "80",
   "imdbRating": "7.8",
