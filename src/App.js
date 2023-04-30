@@ -19,10 +19,12 @@ function App(props) {
 
       if (id === movie.imdbID) {
         //
-        let curentReviews = movie.UserReviews;
+        let currentReviews = movie.UserReviews;
+        
         let newReview = {"Review": newComment, "Stars": newStar};
-        let updatedReviews = curentReviews.push(newReview);
-
+        let updatedReviews = currentReviews.concat(newReview);
+        //let updatedReviews = {...currentReviews, newReview};
+        
         setMovie({...movie, UserReviews: updatedReviews});
         return {...movie, UserReviews: updatedReviews}
         

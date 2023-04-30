@@ -9,6 +9,8 @@ function MovieDetail(props) {
   const reviewList = props.reviews.map((review) => (
     <li className="reviews">{review.Stars}:  {review.Review}</li>
     )) ;
+  /*const reviewList = 
+    <li className="reviews">{typeof props.reviews}, {props.reviews.length}</li>;*/
   
   function selectNewMovie() {
     props.updateMovie(props.id);
