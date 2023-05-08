@@ -4,6 +4,7 @@ import Movies from "./routes/Movies";
 import MovieDetail from './routes/MovieDetail'
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import GetNowPlaying from "./components/GetNowPlaying";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
@@ -91,7 +92,9 @@ function App(props) {
         <Route path="/" element={<Home movies={movies}/>} />
         <Route path="/movies" element={<Movies movies={movieList}/>} />
         <Route path="/movies/:imdbID" element={newMovie} />
+        <Route path="/movie/now_playing" element={<GetNowPlaying/>} />
       </Routes>
+      <getNowPlaying />
       <Footer/>
     </BrowserRouter>
 

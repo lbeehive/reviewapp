@@ -42,6 +42,14 @@ const Navbar = () => {
                 Movies
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/movie/now_playing"
+                className={({ isActive }) => (isActive ? 'active' : '')}
+              >
+                Now Playing
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </header>
